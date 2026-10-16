@@ -18,9 +18,12 @@ class LoginPage(tk.Frame):
 
         tk.Button(self, text="Login", command=self.login).pack(pady=15)
 
+        # Sends user to the RegisterPage defined in the main.py PageClass
         tk.Button(self, text="Register", command=lambda: app.show_page("RegisterPage")).pack()
 
     def login(self):
         username = self.username_entry.get().strip()
         password = self.password_entry.get()
+
+        """ This will be changed to call the service once it is implemented """
 

@@ -18,6 +18,8 @@ class RegisterPage(tk.Frame):
         self.password_entry = tk.Entry(self, width=30, show="*")
         self.password_entry.pack(pady=5)
 
+        # Service to be created
         tk.Button(self, text="Create Account").pack(pady=15)
 
+        # Sends user back to LoginPage defined in main.py PageClass
         tk.Button(self, text="Back to Login", command=lambda: self.app.show_page("LoginPage")).pack()
